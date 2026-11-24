@@ -1,0 +1,63 @@
+.home-search,
+.discover-search {
+  position: relative;
+}
+
+.home-search input,
+.discover-search input {
+  padding-right: 16px;
+}
+
+.home-search input::-webkit-search-cancel-button,
+.discover-search input::-webkit-search-cancel-button {
+  margin-right: 8px;
+}
+
+.recipe-search-suggestions {
+  position: absolute;
+  z-index: 12;
+  left: 0;
+  right: 0;
+  top: calc(100% + 6px);
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--color-peach-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-soft);
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.home-search .recipe-search-suggestion,
+.discover-search .recipe-search-suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  width: 100%;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-charcoal);
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+}
+
+.recipe-search-suggestion small {
+  color: var(--color-muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.home-search .recipe-search-suggestion:hover,
+.discover-search .recipe-search-suggestion:hover,
+.home-search .recipe-search-suggestion.is-active,
+.discover-search .recipe-search-suggestion.is-active {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  text-decoration: none;
+}

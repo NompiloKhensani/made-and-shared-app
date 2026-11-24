@@ -1,0 +1,260 @@
+.kitchen-page,
+.settings-page,
+.profile-page {
+  padding: 0 0 56px;
+  background: var(--color-cream);
+}
+
+.kitchen-body,
+.settings-body,
+.profile-body {
+  padding-top: 28px;
+}
+
+.settings-body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.kitchen-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px;
+}
+
+.kitchen-tabs button {
+  flex: 0 0 auto;
+  border: 1px solid var(--color-peach);
+  border-radius: var(--radius-pill);
+  padding: 7px 12px;
+  background: var(--color-card);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.kitchen-tabs button.active {
+  background: var(--color-burgundy);
+  border-color: var(--color-burgundy);
+  color: var(--color-on-accent);
+}
+
+.kitchen-empty {
+  padding: 48px 20px;
+  text-align: center;
+  color: var(--color-muted);
+  background: var(--color-card);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-large);
+}
+
+.kitchen-empty-inline {
+  padding: 28px 16px;
+  margin-bottom: 16px;
+}
+
+.kitchen-empty-mark {
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.kitchen-empty h3 {
+  margin-bottom: 8px;
+}
+
+.kitchen-empty .primary-button {
+  margin-top: 16px;
+}
+
+.kitchen-actions {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.note-group {
+  margin-bottom: 36px;
+}
+
+.note-group h2 {
+  margin: 8px 0 6px;
+}
+
+.note-group > p,
+.note-recipe-link {
+  color: var(--color-muted);
+  margin-bottom: 14px;
+}
+
+.note-recipe-link a {
+  color: var(--color-burgundy);
+  font-weight: 600;
+}
+
+.note-list {
+  display: grid;
+  gap: 16px;
+}
+
+.note-card,
+.settings-card {
+  padding: 18px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+}
+
+.note-form,
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.settings-form {
+  gap: 22px;
+}
+
+.settings-form h2 {
+  margin-bottom: 0;
+}
+
+.settings-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.note-form input,
+.note-form textarea,
+.settings-form input,
+.settings-form select {
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+}
+
+.settings-form input,
+.settings-form select {
+  width: 100%;
+  max-width: 280px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.profile-header img,
+.settings-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--color-sage-light);
+}
+
+.settings-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-burgundy);
+  border: 2px solid var(--color-coral);
+}
+
+.settings-photo-placeholder svg {
+  width: 36px;
+  height: 36px;
+}
+
+.delete-modal,
+.success-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: var(--color-overlay);
+}
+
+.success-popup {
+  z-index: 210;
+}
+
+.delete-modal-card,
+.success-popup-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: min(100%, 420px);
+  padding: 28px 24px 22px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-card);
+}
+
+.delete-modal-card h2,
+.success-popup-card h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  color: var(--color-charcoal);
+}
+
+.delete-modal-card p,
+.success-popup-card p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.delete-modal-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--color-charcoal);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.delete-modal-card input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-weight: 400;
+}
+
+.delete-modal-card input:focus {
+  outline: 2px solid var(--color-burgundy);
+  outline-offset: 1px;
+}
+
+.delete-modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.success-popup-card {
+  text-align: center;
+  padding: 32px 28px;
+}
